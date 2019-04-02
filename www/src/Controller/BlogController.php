@@ -21,6 +21,10 @@ class BlogController extends AbstractController
         );
     }
 
+	/**
+     * @Route("/blog/{page}", name="blog_list", requirements={"page"="\d+"})
+     */
+	
     /**
      * Matches /blog/*
      * but not /blog/slug/extra-part
